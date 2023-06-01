@@ -1,4 +1,4 @@
-/* Global styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -34,7 +34,7 @@ table td {
     border: 1px solid #ccc;
 }
 
-/* Specific styles */
+
 a {
     text-decoration: none;
     color: #333;
@@ -63,8 +63,11 @@ img[alt="html validator"] {
     display: block;
     margin: 20px auto;
 }
+img[alt="Valid CSS!"] {
+    display: block;
+    margin: 40px auto;
+}
 
-/* Media Queries */
 @media (max-width: 600px) {
     h1 {
         font-size: 24px;
