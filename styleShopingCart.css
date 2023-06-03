@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.welcome {
+    margin-right: 20px;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 5px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.actions {
+    text-align: center;
+}
+
+.cart-picture {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.place-order {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    float: right;
+}
+
