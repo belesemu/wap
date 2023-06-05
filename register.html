@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workshop Registration Form</title>
+  <link rel="stylesheet" href="styleRegister.css">
+
+</head>
+
+<body>
+<h2>Workshop Registration Form</h2>
+<form action="process_form.php" method="POST">
+  <fieldset id="personal-info">
+    <u>Register now while seats are available</u>
+    <label for="first_name">First Name <span class="required">*</span></label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">Last Name <span class="required">*</span> </label>
+    <input type="text" id="last_name" name="last_name"><br><br>
+
+    <label for="company">Company/Institution <span class="required">*</span> </label>
+    <input type="text" id="company" name="company"><br><br>
+
+    <label for="address">Address <span class="required">*</span> </label>
+    <textarea id="address" name="address"></textarea><br><br>
+
+    <label for="city">City:</label>
+    <input type="city" id="city" name="city"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="state">State/Province/Region:</label>
+    <select id="state" name="state">
+      <option value="" selected disabled>Select</option>
+      <option value="Iowa">Iowa</option>
+      <option value="California">California</option>
+      <option value="Colorado">Colorado</option>
+    </select><br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="" selected disabled>Select</option>
+      <option value="USA">USA</option>
+      <option value="Ethiopia">Ethiopia </option>
+      <option value="China">China</option>
+      <option value="India">India</option>
+    </select><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+  </fieldset>
+
+  <fieldset id="lunch-form">
+    <LEGEND>Lunch</LEGEND>
+
+    <label for="meal_preference">Meal Preference:</label>
+    <select id="meal_preference" name="meal_preference">
+      <option value="vegetarian" selected>Vegetarian</option>
+      <option value="Vegan" >Vegan</option>
+
+      <option value="non_vegetarian">Non-Vegetarian</option>
+    </select><br><br>
+
+    <legend>Payment Details</legend>
+    <label>Payment Mode</label>:<br>
+    <input type="checkbox" id="cash" name="payment_mode[]" value="cash">
+    <label for="cash">Cash</label><br>
+
+    <input type="checkbox" id="cheque" name="payment_mode[]" value="cheque">
+    <label for="cheque">Cheque</label><br>
+
+    <input type="checkbox" id="demand_draft" name="payment_mode[]" value="demand_draft">
+    <label for="demand_draft">Demand Draft</label><br><br>
+
+    <label for="dd_cheque_no">DD/Cheque No.:</label>
+    <input type="text" id="dd_cheque_no" name="dd_cheque_no"><br><br>
+
+    <label for="bank_name">Drawn on (Bank Name):</label>
+    <input type="text" id="bank_name" name="bank_name"><br><br>
+
+    <label for="payable_at">Payable at:</label>
+    <input type="text" id="payable_at" name="payable_at"><br><br>
+  </fieldset>
+
+  <div class="buttons">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </div>
+</form>
+
+</body>
+</html>
