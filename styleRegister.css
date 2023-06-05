@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="city"],
+
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    margin-left: 5px; /* Updated */
+}
+
+label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Updated */
+    margin-top: 20px;
+    flex-basis: 100%; /* Added */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px; /* Added */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.required {
+    color: red;
+}
